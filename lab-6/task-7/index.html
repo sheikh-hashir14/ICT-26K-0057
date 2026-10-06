@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+            
+        section{
+            padding: 50px 20px;
+            text-align: center;
+        }
+            
+        h2{
+            color: darkblue;
+        }
+            
+        /* Hero */
+        .hero{
+            background-color: #b4dbfd;
+            padding: 100px 20px;
+        }
+        .hero h1{
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+            
+        button{
+            color: white;
+            background-color: darkblue;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            transform: scale(1.05);
+        }
+            
+        /* About */
+        .about{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .about img{
+            width: 250px;
+            border-radius: 10px;
+        }
+        .about-text{
+            max-width: 400px;
+            text-align: left;
+        }
+            
+        /* Services */
+        .services{
+            background-color: #eaf4ff;
+        }
+        .services ul{
+            list-style: none;
+            padding: 0;
+        }
+        .services li{
+            margin: 10px;
+            font-size: 18px;
+        }
+            
+        /* Contact */
+        .contact input, .contact textarea{
+            display: block;
+            margin: 10px auto;
+            padding: 8px;
+            width: 300px;
+            border: 1px solid gray;
+            border-radius: 3px;
+        }
+        .contact input:focus, .contact textarea:focus{
+            border-color: blue;
+            outline: none;
+        }
+            
+        /* Responsive: stack the About section and shrink the form on small screens */
+        @media (max-width: 720px){
+            .about{
+                flex-direction: column;
+            }
+            .about-text{
+                text-align: center;
+            }
+            .hero h1{
+                font-size: 28px;
+            }
+            .contact input, .contact textarea{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>Welcome to Our Company</h1>
+        <p>We build simple solutions for everyday problems.</p>
+        <button>Get Started</button>
+    </section>
+
+    <section class="about">
+        <img src="portrait-placeholder.jpg" alt="About us image">
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>We are a small team focused on delivering quality work. Our goal is to help our clients grow with clear, reliable, and friendly service.</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <ul>
+        <li>Web Design</li>
+        <li>Web Development</li>
+        <li>Branding</li>
+        <li>Technical Support</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+    <h2>Contact Us</h2>
+        <form>
+        <input type="text" name="name" placeholder="Your name">
+        <input type="email" name="email" placeholder="Your email">
+        <textarea name="message" rows="5" placeholder="Your message"></textarea>
+        <button type="submit">Send</button>
+        </form>
+    </section>
+
+</body>
+</html>
