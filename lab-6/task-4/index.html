@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 750px;
+            width: auto;
+        }
+        form{
+            background-color: #b4dbfd;
+            width: fit-content;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input{
+            border-radius: 3px; 
+        }
+        input:focus{
+            border-color: blue;
+        }
+
+        a{
+            color: darkblue;
+        }
+        a:hover{
+            color: blueviolet;
+        }
+
+        button{
+            color: white;
+            background-color: darkblue;
+            border-radius: 5px;
+            
+        }
+        button:hover{
+            transform:scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <form class="login-form">
+        <h2>Login</h2>
+        
+        <label for="username">Username</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter username">
+        <br>
+        <br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter password">
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+        
+        <p class="forgot"><a href="#">Forgot Password?</a></p>
+  </form>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form{
+            background-color: #b4dbfd;
+            width: fit-content;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, textarea{
+            padding: 6px;
+            border: 1px solid gray;
+            border-radius: 3px;
+        }
+        input:focus, textarea:focus{
+            border-color: blue;
+            outline: none;
+        }
+
+        .rating{
+            margin-top: 5px;
+        }
+        .rating input{
+            padding: 0;
+        }
+
+        button{
+            color: white;
+            background-color: darkblue;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            transform:scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <form class="feedback-form">
+        <h2>Feedback</h2>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <br>
+        <br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <br>
+        <br>
+        <label>Rating</label><br>
+        <div class="rating">
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1">1</label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2">2</label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3">3</label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4">4</label>
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5">5</label>
+        </div>
+        <br>
+        <label for="message">Feedback</label><br>
+        <textarea id="message" name="message" rows="5" cols="30" placeholder="Write your feedback here"></textarea>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
