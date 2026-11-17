@@ -21,3 +21,10 @@ h1{
 a{
     color: black;
 }
+
+.pict {
+    width: 400px;
+    float: right;
+    border: 2px dashed brown;
+    margin: 0 0 10px 15px;
+}
